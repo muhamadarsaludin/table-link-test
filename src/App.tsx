@@ -4,6 +4,7 @@ import SortDescAge, { MinAge, MaxAge, SortAscAge } from './components/Age.tsx'
 import Tabs from './components/tabs/Tabs.tsx'
 import Modal from './components/modal/Modal.tsx'
 import './App.css'
+import UserPage from './pages/userPage.tsx' 
 
 function App() {
   const [count, setCount] = useState(0)
@@ -70,7 +71,7 @@ function App() {
           5. Data Tables
         </h2>
         <div className='task-content'>
-          {/* Data Tables component would go here */}
+          {/* <UserPage/> */}
         </div>
       </div>
     </div>
