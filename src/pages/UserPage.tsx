@@ -22,6 +22,12 @@ export default function UserPage() {
   return (
     <div>
       <h1>User Data</h1>
+      <input
+        type="text"
+        placeholder="Search name or email"
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
+      />
       <Table data={filteredData} />
     </div>
   );

@@ -71,7 +71,7 @@ function App() {
           5. Data Tables
         </h2>
         <div className='task-content'>
-          {/* <UserPage/> */}
+          <UserPage/>
         </div>
       </div>
     </div>

@@ -13,8 +13,12 @@ export default function Table({ data }: { data: any[] }) {
       accessorKey: 'name',
     },
     {
-      header: 'Age',
-      accessorKey: 'age',
+      header: 'Username',
+      accessorKey: 'username',
+    },
+    {
+      header: 'Email',
+      accessorKey: 'email',
     }
   ]
 
@@ -51,6 +55,24 @@ export default function Table({ data }: { data: any[] }) {
           ))}
         </tbody>
       </table>
+
+      <div className="pagination">
+        <button
+          onClick={() => table.previousPage()}
+          disabled={!table.getCanPreviousPage()}
+        >
+          Previous
+        </button>
+        <span>
+          Page {table.getState().pagination.pageIndex + 1} of {table.getPageCount()}
+        </span>
+        <button
+          onClick={() => table.nextPage()}
+          disabled={!table.getCanNextPage()}
+        >
+          Next
+        </button>
+      </div>  
     </div>
   )
 }
