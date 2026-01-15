@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Counter from './components/counter/Counter.tsx'
 import SortDescAge, { MinAge, MaxAge, SortAscAge } from './components/Age.tsx'
-import Tabs from './components/Tabs.tsx'
+import Tabs from './components/tabs/Tabs.tsx'
 import Modal from './components/modal/Modal.tsx'
 import './App.css'
 
@@ -63,6 +63,15 @@ function App() {
           content="This is the modal content."
           onClose={() => setIsModalOpen(false)}
         />
+      </div>
+
+      <div className='task'>
+        <h2 className='task-label'>
+          5. Data Tables
+        </h2>
+        <div className='task-content'>
+          {/* Data Tables component would go here */}
+        </div>
       </div>
     </div>
   )
