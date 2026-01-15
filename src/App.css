@@ -1,0 +1,24 @@
+.tasks {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 16px;
+  align-items: baseline;
+}
+.task {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: baseline;
+}
+
+.task-label {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.task-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}

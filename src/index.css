@@ -1,0 +1,20 @@
+* {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 24px;
+  background-color: #f5f5f5;
+  overflow-x: hidden;
+  overflow-y: auto;  
+  min-height: 200vh;
+}
+
+[class*=m-scroll-lock] {
+  overflow: hidden;
+  touch-action: none;
+  -ms-touch-action: none;
+}

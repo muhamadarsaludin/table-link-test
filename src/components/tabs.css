@@ -1,0 +1,19 @@
+.tabs {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+}
+.tab {
+  all: unset;
+  cursor: pointer;
+}
+.tab:hover {
+  color: #5049db;
+}
+
+.m-active {
+  color: #5049db;
+  border-bottom: 1px solid #5049db;
+}
